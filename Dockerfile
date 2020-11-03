@@ -5,7 +5,7 @@ RUN apt update && \
         build-essential git \
         python python-dev python-setuptools python-pip \
         bwa samtools tabix
-RUN git clone git clone https://drtomc@bitbucket.org/sequenzatools/sequenza-utils.git && \
+RUN git clone https://drtomc@bitbucket.org/sequenzatools/sequenza-utils.git && \
     cd sequenza-utils && \
     python setup.py test && \
     python setup.py install --install-scripts=/usr/bin && \
